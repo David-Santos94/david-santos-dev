@@ -6,9 +6,9 @@ import linkedin from "../../assets/images/Linkedin-bk.png";
 import instagram from "../../assets/images/Instagram-bk.png";
 import down from "../../assets/images/down.png";
 
-const Hero = () => {
+const Hero = ({ sectionRef, onNavigate }) => {
   return (
-    <SectionContainer>
+    <SectionContainer ref={sectionRef}>
       <S.BackgoundImg image={hero}>
         <S.Overlay />
         <Container>
@@ -37,14 +37,10 @@ const Hero = () => {
               </S.LinkTo>
             </S.SocialContainer>
           </S.Content>
-          <S.ScrollDownContainer>
-            <S.LinkTo>
-              <S.ScrollDownImg src={down} alt="scroll down" />
-            </S.LinkTo>
-            <S.LinkTo>
-              <S.ScrollDownText>Scroll Down</S.ScrollDownText>
-            </S.LinkTo>
-          </S.ScrollDownContainer>
+          <S.ScrollDownButton onClick={() => onNavigate("about")}>
+            <S.ScrollDownImg src={down} alt="scroll down" />
+            <S.ScrollDownText>Scroll Down</S.ScrollDownText>
+          </S.ScrollDownButton>
         </Container>
       </S.BackgoundImg>
     </SectionContainer>

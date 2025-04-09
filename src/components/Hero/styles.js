@@ -8,6 +8,7 @@ export const BackgoundImg = styled.div`
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+  background-attachment: fixed;
 `;
 
 export const Overlay = styled.div`
@@ -77,13 +78,22 @@ export const SocialIcon = styled.img`
   transition: transform 0.3s ease;
 `;
 
-export const ScrollDownContainer = styled.div`
+export const ScrollDownButton = styled.button`
   position: relative;
   display: flex;
   flex-direction: row;
   justify-content: center;
   align-items: center;
   z-index: 1;
+  background-color: transparent;
+  border: none;
+  margin: 0 auto;
+  transition: transform 0.3s ease;
+
+  &:hover {
+    transform: scale(1.1);
+    cursor: pointer;
+  }
 `;
 
 export const ScrollDownImg = styled.img`

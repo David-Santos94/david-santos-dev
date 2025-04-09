@@ -1,8 +1,31 @@
 import React from "react";
 import * as S from "./styles";
+import { Container, SectionContainer } from "../../styles";
+import perfil from "../../assets/images/perfil.jpg";
 
-const About = () => {
-  return <S.Text>HELLO</S.Text>;
+const About = ({ sectionRef }) => {
+  return (
+    <SectionContainer ref={sectionRef}>
+      <Container>
+        <S.Content>
+          <S.Titles>About Me</S.Titles>
+          <S.ImgPerfil src={perfil} alt="foto de perfil" />
+          <S.Text>
+            Profissional em evolução na área de desenvolvedor Web Front-end.
+            Prezo e me identifico com designs intuitivos e pela usabilidade do
+            usuário, com criatividade e muita atenção aos detalhes. Sempre fui
+            apaixonado por tecnologia, e desenvolvi habilidades de programação
+            desde que comecei a trabalhar na área de manutenção
+            eletroeletrônica. Além das habilidades que desenvolvi ao longo da
+            minha carreira como, raciocínio lógico e resolução de problemas,
+            interpretação de diagramas e esquemas, planejamento e organização,
+            trabalho em equipe, comunicação eficaz e gestão de tempo. As quais
+            considero pontos fortes que poderei aplicar no desenvolvimento web
+          </S.Text>
+        </S.Content>
+      </Container>
+    </SectionContainer>
+  );
 };
 
 export default About;
