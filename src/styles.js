@@ -15,7 +15,7 @@ export const Colors = {
   fonteTerciaria: "#313131",
   fonteQuaternaria: "#6e6e6e",
   bgcolor1: "#FFFFFF",
-  bgcolor2: "#EBEBEB",
+  bgcolor2: "#313131",
   bgcolor3: "#FFEBD9",
   bgcolor4: "#E66767",
 };
@@ -45,7 +45,6 @@ export const FontFamily = {
 
 export const Container = styled.div`
   max-width: 1080px;
-  min-height: 100vh;
   margin: 0 auto;
 `;
 

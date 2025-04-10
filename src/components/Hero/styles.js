@@ -87,6 +87,7 @@ export const ScrollDownButton = styled.button`
   z-index: 1;
   background-color: transparent;
   border: none;
+  height: 5vh;
   margin: 0 auto;
   transition: transform 0.3s ease;
 
