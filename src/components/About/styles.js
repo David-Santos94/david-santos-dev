@@ -6,12 +6,13 @@ export const Content = styled.div`
   display: grid;
   height: 100vh;
   grid-template:
-    "a a a"
-    "b c c";
+    "b a"
+    "b c";
+  grid-template-rows: 80px 400px;
+  grid-template-columns: 55% 45%;
   align-items: center;
   justify-items: center;
   align-content: space-evenly;
-  grid-template-rows: 80px 400px;
 `;
 
 export const Titles = styled.h1`
@@ -25,12 +26,9 @@ export const Titles = styled.h1`
 
 export const ImgPerfil = styled.img`
   grid-area: b;
-  width: 350px;
-  aspect-ratio: 1/1;
-  border-radius: 50%;
-  border: 10px solid ${Colors.bgcolor3};
+  width: 100%;
+  height: 100vh;
   object-fit: cover;
-  object-position: center;
 `;
 
 export const Text = styled.p`

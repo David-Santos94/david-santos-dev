@@ -3,6 +3,7 @@ import About from "./components/About";
 import { GlobalCss, Container } from "./styles";
 import { useRef, useState, useEffect } from "react";
 import Header from "./components/Header";
+import Skills from "./components/Skills";
 
 function App() {
   const [activeSection, setActiveSection] = useState("home");
@@ -59,6 +60,7 @@ function App() {
       />
       <Hero sectionRef={sectionsRefs.home} onNavigate={scrollToSection} />
       <About sectionRef={sectionsRefs.about} />
+      <Skills sectionRef={sectionsRefs.skills} />
     </>
   );
 }
