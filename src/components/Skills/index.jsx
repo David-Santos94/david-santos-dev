@@ -96,7 +96,7 @@ const Skills = ({ sectionRef }) => {
       name: "Figma",
     },
     {
-      src: "https://skillicons.dev/icons?i=cypress&theme=dark",
+      src: "https://skillicons.dev/icons?i=cypress&theme=light",
       x: 490,
       y: 150,
       size: 90,
@@ -156,7 +156,15 @@ const Skills = ({ sectionRef }) => {
               />
             ))}
           </S.SkillList>
-          <S.SkillName>{hoveredSkill}</S.SkillName>
+          <S.SkillName>
+            {iconData.map((icon, index) =>
+              hoveredSkill === icon.name ? (
+                <S.HighlightName key={index}>{icon.name}</S.HighlightName>
+              ) : (
+                <S.Name key={index}>{icon.name}</S.Name>
+              )
+            )}
+          </S.SkillName>
         </Container>
       </S.Content>
     </SectionContainer>

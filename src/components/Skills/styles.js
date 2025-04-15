@@ -27,13 +27,30 @@ export const SkillList = styled.div`
 `;
 
 export const SkillName = styled.div`
+  display: flex;
+  width: 100%;
+  height: 64px;
+  justify-content: center;
+  align-items: center;
+`;
+
+export const Name = styled.span`
   ${FontFamily.loraTexts}
-  height: 32px;
-  font-size: 28px;
+  font-size: 16px;
   font-weight: 400;
   text-align: center;
-  color: ${Colors.fontePrimaria};
+  color: ${Colors.fonteQuaternaria};
   pointer-events: none;
+  padding: 0 8px;
+`;
+
+export const HighlightName = styled(Name)`
+  font-size: 18px;
+  color: ${Colors.fontePrimaria};
+  background-color: ${Colors.fonteSecundaria};
+  pad: 0;
+  border-radius: 16px;
+  box-shadow: 0px 0px 15px #ffffff;
 `;
 
 export const SkillIcon = styled.img`
