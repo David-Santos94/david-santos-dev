@@ -141,7 +141,7 @@ const Skills = ({ sectionRef }) => {
     <SectionContainer ref={sectionRef}>
       <S.Content>
         <Container>
-          <S.Titles>My Skills</S.Titles>
+          <S.Titles>Minhas Skills</S.Titles>
           <S.SkillList>
             {iconData.map((icon, index) => (
               <S.SkillIcon

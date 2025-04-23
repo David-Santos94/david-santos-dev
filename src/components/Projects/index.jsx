@@ -32,7 +32,7 @@ const Projects = ({ sectionRef }) => {
       <S.Content image={Background}>
         <AppS.Overlay />
         <AppS.Container>
-          <AppS.Titles>Projects</AppS.Titles>
+          <AppS.Titles>Projetos</AppS.Titles>
           <S.ProjectList>
             {projectData.map((project, index) => (
               <S.Card

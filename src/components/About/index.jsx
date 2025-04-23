@@ -7,7 +7,7 @@ const About = ({ sectionRef }) => {
   return (
     <SectionContainer ref={sectionRef}>
       <S.Content>
-        <S.Titles>About Me</S.Titles>
+        <S.Titles>Sobre Mim</S.Titles>
         <S.ImgPerfil src={perfil} alt="foto de perfil" />
         <S.Text>
           Profissional em evolução na área de desenvolvedor Web Front-end. Prezo
@@ -25,7 +25,7 @@ const About = ({ sectionRef }) => {
           href="https://drive.google.com/file/d/1YJxtbBBpFQj1WldhIggII0V1R89dDdIS/view?usp=sharing"
           target="_blank"
         >
-          Downlod CV
+          Download CV
         </S.DownloadCV>
       </S.Content>
     </SectionContainer>

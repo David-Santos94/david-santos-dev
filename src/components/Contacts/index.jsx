@@ -9,14 +9,14 @@ const Contacts = ({ sectionRef }) => {
         <AppS.Container>
           <S.Contact>
             <S.ContactDiv>
-              <AppS.Titles>Contact me</AppS.Titles>
+              <AppS.Titles>Meus Contatos</AppS.Titles>
               <S.ContactImg>
                 <img src={perfil} alt="imagem de perfil" />
               </S.ContactImg>
             </S.ContactDiv>
             <S.ContactDiv>
               <S.ContactMethod href="tel:+351914036528" target="_blank">
-                Phone
+                Telefone
               </S.ContactMethod>
               <S.ContactMethod
                 href="https://wa.me/351914036528"

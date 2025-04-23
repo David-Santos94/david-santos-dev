@@ -1,6 +1,12 @@
 import * as S from "./styles";
 
 const Header = ({ itemsNav, onNavigate, activeItem }) => {
+  const labelsPt = {
+    about: "SOBRE",
+    projects: "PROJETOS",
+    contacts: "CONTATOS",
+  };
+
   return (
     <S.NavContainer solidNav={activeItem !== "home"}>
       <S.Nav>
@@ -10,7 +16,7 @@ const Header = ({ itemsNav, onNavigate, activeItem }) => {
             onClick={() => onNavigate(item)}
             active={activeItem === item}
           >
-            {item.toUpperCase()}
+            {labelsPt[item] || item.toUpperCase()}
           </S.Item>
         ))}
       </S.Nav>
