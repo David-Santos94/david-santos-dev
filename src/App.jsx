@@ -4,6 +4,8 @@ import { GlobalCss, Container } from "./styles";
 import { useRef, useState, useEffect } from "react";
 import Header from "./components/Header";
 import Skills from "./components/Skills";
+import Projects from "./components/Projects";
+import Contacts from "./components/Contacts";
 
 function App() {
   const [activeSection, setActiveSection] = useState("home");
@@ -13,6 +15,7 @@ function App() {
     about: useRef(null),
     skills: useRef(null),
     projects: useRef(null),
+    contacts: useRef(null),
   };
 
   const sectionsNavBar = Object.keys(sectionsRefs);
@@ -61,6 +64,8 @@ function App() {
       <Hero sectionRef={sectionsRefs.home} onNavigate={scrollToSection} />
       <About sectionRef={sectionsRefs.about} />
       <Skills sectionRef={sectionsRefs.skills} />
+      <Projects sectionRef={sectionsRefs.projects} />
+      <Contacts sectionRef={sectionsRefs.contacts} />
     </>
   );
 }

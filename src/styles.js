@@ -16,7 +16,7 @@ export const Colors = {
   fonteQuaternaria: "#6e6e6e",
   bgcolor1: "#FFFFFF",
   bgcolor2: "#313131",
-  bgcolor3: "#FFEBD9",
+  bgcolor3: "#F06000",
   bgcolor4: "#E66767",
 };
 
@@ -46,9 +46,28 @@ export const FontFamily = {
 export const Container = styled.div`
   max-width: 1080px;
   margin: 0 auto;
+  z-index: 1;
 `;
 
 export const SectionContainer = styled.section`
   width: 100%;
   background-color: ${(props) => props.color};
+`;
+
+export const Overlay = styled.div`
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.6);
+`;
+
+export const Titles = styled.h1`
+  grid-area: a;
+  ${FontFamily.poppinsHero}
+  font-size: 48px;
+  font-weight: 700;
+  color: ${Colors.fonteSecundaria};
+  text-align: center;
 `;

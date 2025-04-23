@@ -21,6 +21,12 @@ const About = ({ sectionRef }) => {
           eficaz e gestão de tempo. As quais considero pontos fortes que poderei
           aplicar no desenvolvimento web
         </S.Text>
+        <S.DownloadCV
+          href="https://drive.google.com/file/d/1YJxtbBBpFQj1WldhIggII0V1R89dDdIS/view?usp=sharing"
+          target="_blank"
+        >
+          Downlod CV
+        </S.DownloadCV>
       </S.Content>
     </SectionContainer>
   );
