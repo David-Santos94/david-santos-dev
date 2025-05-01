@@ -1,0 +1,191 @@
+{
+  "Hero": {
+    "title1": "HELLO, WORLD.",
+    "titleName": "I'm David Santos.",
+    "title2": "| FRONT-END DEVELOPER |",
+    "image": "/images/hero_bkg.jpg",
+    "Icon": [
+      {
+        "href": "https://github.com/David-Santos94",
+        "src": "/images/Github-bk.png",
+        "alt": "icone github"
+      },
+      {
+        "href": "https://www.linkedin.com/in/david-marlon-dos-santos/",
+        "src": "/images/Linkedin-bk.png",
+        "alt": "icone linkedin"
+      },
+      {
+        "href": "https://www.instagram.com/dmarlon94/",
+        "src": "/images/Instagram-bk.png",
+        "alt": "icone instagram"
+      }
+    ]
+  },
+  "About": {
+    "title": "Sobre Mim",
+    "image": "/images/perfil.jpg",
+    "paragraph": "Profissional em evolução na área de desenvolvedor Web Front-end. Prezo e me identifico com designs intuitivos e pela usabilidade do usuário, com criatividade e muita atenção aos detalhes. Sempre fui apaixonado por tecnologia, e desenvolvi habilidades de programação desde que comecei a trabalhar na área de manutenção eletroeletrônica. Além das habilidades que desenvolvi ao longo da minha carreira como, raciocínio lógico e resolução de problemas, interpretação de diagramas e esquemas, planejamento e organização, trabalho em equipe, comunicação eficaz e gestão de tempo. As quais considero pontos fortes que poderei aplicar no desenvolvimento web",
+    "href": "https://drive.google.com/file/d/1YJxtbBBpFQj1WldhIggII0V1R89dDdIS/view?usp=sharing"
+  },
+  "Skills": {
+    "title": "Minhas Skills",
+    "Icon": [
+      {
+        "src": "https://skillicons.dev/icons?i=css&theme=dark",
+        "x": 50,
+        "y": 30,
+        "size": 80,
+        "name": "Css"
+      },
+      {
+        "src": "https://skillicons.dev/icons?i=html&theme=dark",
+        "x": 110,
+        "y": 90,
+        "size": 70,
+        "name": "Html"
+      },
+      {
+        "src": "https://skillicons.dev/icons?i=js&theme=dark",
+        "x": 250,
+        "y": 40,
+        "size": 100,
+        "name": "Javascript"
+      },
+      {
+        "src": "https://skillicons.dev/icons?i=react&theme=dark",
+        "x": 160,
+        "y": 10,
+        "size": 90,
+        "name": "React"
+      },
+      {
+        "src": "https://skillicons.dev/icons?i=git&theme=dark",
+        "x": 440,
+        "y": 15,
+        "size": 50,
+        "name": "Git"
+      },
+      {
+        "src": "https://skillicons.dev/icons?i=github&theme=dark",
+        "x": 500,
+        "y": 20,
+        "size": 80,
+        "name": "Github"
+      },
+      {
+        "src": "https://skillicons.dev/icons?i=gulp&theme=dark",
+        "x": 350,
+        "y": 90,
+        "size": 70,
+        "name": "Gulp"
+      },
+      {
+        "src": "https://skillicons.dev/icons?i=jest&theme=dark",
+        "x": 190,
+        "y": 150,
+        "size": 60,
+        "name": "Jest"
+      },
+      {
+        "src": "https://skillicons.dev/icons?i=jquery&theme=dark",
+        "x": 400,
+        "y": 200,
+        "size": 60,
+        "name": "Jquery"
+      },
+      {
+        "src": "https://skillicons.dev/icons?i=sass&theme=dark",
+        "x": 300,
+        "y": 250,
+        "size": 80,
+        "name": "Sass"
+      },
+      {
+        "src": "https://skillicons.dev/icons?i=bootstrap&theme=dark",
+        "x": 60,
+        "y": 170,
+        "size": 90,
+        "name": "Bootstrap"
+      },
+      {
+        "src": "https://skillicons.dev/icons?i=vuejs&theme=dark",
+        "x": 450,
+        "y": 100,
+        "size": 70,
+        "name": "Vuejs"
+      },
+      {
+        "src": "https://skillicons.dev/icons?i=figma&theme=dark",
+        "x": 370,
+        "y": 20,
+        "size": 70,
+        "name": "Figma"
+      },
+      {
+        "src": "https://skillicons.dev/icons?i=cypress&theme=light",
+        "x": 490,
+        "y": 150,
+        "size": 90,
+        "name": "Cypress"
+      },
+      {
+        "src": "https://skillicons.dev/icons?i=typescript&theme=dark",
+        "x": 300,
+        "y": 140,
+        "size": 90,
+        "name": "Typescript"
+      },
+      {
+        "src": "https://skillicons.dev/icons?i=vercel&theme=dark",
+        "x": 200,
+        "y": 200,
+        "size": 90,
+        "name": "Vercel"
+      }
+    ]
+  },
+  "Projects": {
+    "title": "Projetos",
+    "image": "/images/fundo_portifolio.jpg",
+    "List": [
+      {
+        "image": "/images/efood.png",
+        "hrefLive": "https://efood-ds.vercel.app/",
+        "hrefCode": "https://github.com/David-Santos94/efood"
+      },
+      {
+        "image": "/images/minhas_tarefas.png",
+        "hrefLive": "https://minhas-tarefas-rosy.vercel.app/",
+        "hrefCode": "https://github.com/David-Santos94/minhas-tarefas"
+      },
+      {
+        "image": "/images/spider_man.png",
+        "hrefLive": "https://spider-man-page-one.vercel.app/",
+        "hrefCode": "https://github.com/David-Santos94/spider_man_page"
+      }
+    ]
+  },
+  "Contacts": {
+    "title": "Meus Contatos",
+    "image": "/images/perfil.jpg",
+    "Methods": [
+      {
+        "title": "Telefone",
+        "href": "tel:+351914036528"
+      },
+      {
+        "title": "WhatsApp",
+        "href": "https://wa.me/351914036528"
+      },
+      {
+        "title": "Email",
+        "href": "mailto:david.marlon94@gmail.com"
+      },
+      {
+        "title": "Linkedin",
+        "href": "https://www.linkedin.com/in/david-marlon-dos-santos/"
+      }
+    ]
+  }
+}

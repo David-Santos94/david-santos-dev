@@ -1,40 +1,18 @@
 import React, { useState } from "react";
 import * as S from "./styles";
 import * as AppS from "../../styles";
-import Background from "../../assets/images/fundo_portifolio.jpg";
-import efood from "../../assets/images/efood.png";
-import tarefas from "../../assets/images/minhas_tarefas.png";
-import spiderman from "../../assets/images/spider_man.png";
 
-const Projects = ({ sectionRef }) => {
-  const projectData = [
-    {
-      image: efood,
-      hrefLive: "https://efood-ds.vercel.app/",
-      hrefCode: "https://github.com/David-Santos94/efood",
-    },
-    {
-      image: tarefas,
-      hrefLive: "https://minhas-tarefas-rosy.vercel.app/",
-      hrefCode: "https://github.com/David-Santos94/minhas-tarefas",
-    },
-    {
-      image: spiderman,
-      hrefLive: "https://spider-man-page-one.vercel.app/",
-      hrefCode: "https://github.com/David-Santos94/spider_man_page",
-    },
-  ];
-
+const Projects = ({ data, sectionRef }) => {
   const [hoveredCard, setHoveredCard] = useState(null);
 
   return (
     <AppS.SectionContainer ref={sectionRef}>
-      <S.Content image={Background}>
+      <S.Content image={data.image}>
         <AppS.Overlay />
         <AppS.Container>
-          <AppS.Titles>Projetos</AppS.Titles>
+          <AppS.Titles>{data.title}</AppS.Titles>
           <S.ProjectList>
-            {projectData.map((project, index) => (
+            {data.List.map((project, index) => (
               <S.Card
                 key={index}
                 onMouseEnter={() => setHoveredCard(index)}

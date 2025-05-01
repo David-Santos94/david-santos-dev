@@ -1,22 +1,33 @@
 import Hero from "./components/Hero";
 import About from "./components/About";
 import { GlobalCss, Container } from "./styles";
-import { useRef, useState, useEffect } from "react";
+import { useRef, useState, useEffect, useMemo } from "react";
 import Header from "./components/Header";
 import Skills from "./components/Skills";
 import Projects from "./components/Projects";
 import Contacts from "./components/Contacts";
+import JsonData from "./assets/data/data.json";
 
 function App() {
+  const [pageData, setPageData] = useState({});
   const [activeSection, setActiveSection] = useState("home");
 
-  const sectionsRefs = {
-    home: useRef(null),
-    about: useRef(null),
-    skills: useRef(null),
-    projects: useRef(null),
-    contacts: useRef(null),
-  };
+  const homeRef = useRef(null);
+  const aboutRef = useRef(null);
+  const skillsRef = useRef(null);
+  const projectsRef = useRef(null);
+  const contactsRef = useRef(null);
+
+  const sectionsRefs = useMemo(
+    () => ({
+      home: homeRef,
+      about: aboutRef,
+      skills: skillsRef,
+      projects: projectsRef,
+      contacts: contactsRef,
+    }),
+    []
+  );
 
   const sectionsNavBar = Object.keys(sectionsRefs);
 
@@ -28,6 +39,12 @@ function App() {
   };
 
   useEffect(() => {
+    setPageData(JsonData);
+  }, []);
+
+  useEffect(() => {
+    if (!pageData.Hero) return;
+
     const observer = new IntersectionObserver(
       (entries) => {
         entries.forEach((entry) => {
@@ -51,21 +68,37 @@ function App() {
     });
 
     return () => observer.disconnect();
-  }, []);
+  }, [pageData.Hero, sectionsRefs]);
 
   return (
     <>
-      <GlobalCss />
-      <Header
-        itemsNav={sectionsNavBar}
-        onNavigate={scrollToSection}
-        activeItem={activeSection}
-      />
-      <Hero sectionRef={sectionsRefs.home} onNavigate={scrollToSection} />
-      <About sectionRef={sectionsRefs.about} />
-      <Skills sectionRef={sectionsRefs.skills} />
-      <Projects sectionRef={sectionsRefs.projects} />
-      <Contacts sectionRef={sectionsRefs.contacts} />
+      {pageData.Hero ? (
+        <>
+          <GlobalCss />
+          <Header
+            itemsNav={sectionsNavBar}
+            onNavigate={scrollToSection}
+            activeItem={activeSection}
+          />
+          <Hero
+            sectionRef={sectionsRefs.home}
+            data={pageData.Hero}
+            onNavigate={scrollToSection}
+          />
+          <About sectionRef={sectionsRefs.about} data={pageData.About} />
+          <Skills sectionRef={sectionsRefs.skills} data={pageData.Skills} />
+          <Projects
+            sectionRef={sectionsRefs.projects}
+            data={pageData.Projects}
+          />
+          <Contacts
+            sectionRef={sectionsRefs.contacts}
+            data={pageData.Contacts}
+          />
+        </>
+      ) : (
+        <p>Carregando...</p>
+      )}
     </>
   );
 }
