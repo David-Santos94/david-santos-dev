@@ -28,6 +28,10 @@ export const Content = styled.div`
   align-items: center;
   justify-content: center;
   z-index: 1;
+
+  @media screen and (max-width: 1023px) {
+    height: 94svh;
+  }
 `;
 
 export const Titles1 = styled.h2`
@@ -49,6 +53,10 @@ export const TitleName = styled.h1`
   font-size: 84px;
   font-weight: 700;
   color: ${Colors.fontePrimaria};
+
+  @media screen and (max-width: 1023px) {
+    text-align: center;
+  }
 `;
 
 export const SocialContainer = styled.div`

@@ -11,6 +11,10 @@ export const Content = styled.div`
   background-repeat: no-repeat;
   background-size: cover;
   background-attachment: fixed;
+
+  @media screen and (max-width: 1023px) {
+    height: auto;
+  }
 `;
 
 export const ProjectList = styled.div`
@@ -18,6 +22,10 @@ export const ProjectList = styled.div`
   grid-template-columns: 1fr 1fr 1fr;
   gap: 16px;
   margin-top: 64px;
+
+  @media screen and (max-width: 1023px) {
+    grid-template-columns: 1fr;
+  }
 `;
 
 export const Card = styled.div`
@@ -34,10 +42,27 @@ export const Card = styled.div`
   &:hover {
     transform: scale(1.3);
     z-index: 1;
+
+    @media screen and (max-width: 1023px) {
+      transform: scale(1.3);
+    }
+
+    @media screen and (max-width: 767px) {
+      transform: scale(1.1);
+    }
   }
 
   &:hover div {
     filter: brightness(0.6);
+  }
+
+  @media screen and (max-width: 1023px) {
+    width: 444px;
+    height: 400px;
+  }
+  @media screen and (max-width: 767px) {
+    width: 344px;
+    height: 300px;
   }
 `;
 

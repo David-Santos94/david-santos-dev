@@ -14,6 +14,15 @@ export const Content = styled.div`
   row-gap: 100px;
   align-items: center;
   justify-items: center;
+
+  @media screen and (max-width: 1023px) {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    position: relative;
+    row-gap: 0;
+    height: 100svh;
+  }
 `;
 
 export const Titles = styled.h1`
@@ -24,6 +33,10 @@ export const Titles = styled.h1`
   color: ${Colors.fonteSecundaria};
   text-align: center;
   margin-top: 100px;
+
+  @media screen and (max-width: 1023px) {
+    margin: 0;
+  }
 `;
 
 export const ImgPerfil = styled.img`
@@ -31,6 +44,16 @@ export const ImgPerfil = styled.img`
   width: 100%;
   height: 100vh;
   object-fit: cover;
+
+  @media screen and (max-width: 1023px) {
+    text-align: center;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: -1;
+    filter: brightness(0.4);
+  }
 `;
 
 export const Text = styled.p`
@@ -40,6 +63,17 @@ export const Text = styled.p`
   font-weight: 400;
   color: ${Colors.fonteTerciaria};
   margin: 0 100px;
+
+  @media screen and (max-width: 1023px) {
+    color: ${Colors.fontePrimaria};
+    margin: 0;
+    width: 80%;
+    font-size: 24px;
+  }
+
+  @media screen and (max-width: 767px) {
+    font-size: 16px;
+  }
 `;
 
 export const DownloadCV = styled.a`

@@ -6,12 +6,22 @@ export const Content = styled.div`
   align-items: center;
   height: 100vh;
   background-color: ${Colors.bgcolor1};
+
+  @media screen and (max-width: 1023px) {
+    height: 100svh;
+  }
 `;
 
 export const Contact = styled.div`
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 150px;
+  width: 100%;
+
+  @media screen and (max-width: 1023px) {
+    grid-template-columns: 1fr;
+    gap: 16px;
+  }
 `;
 
 export const ContactDiv = styled.div`
@@ -21,6 +31,11 @@ export const ContactDiv = styled.div`
   align-items: center;
   width: 400px;
   height: 500px;
+
+  @media screen and (max-width: 1023px) {
+    width: 100%;
+    height: auto;
+  }
 `;
 
 export const ContactImg = styled.div`
@@ -39,7 +54,7 @@ export const ContactImg = styled.div`
 export const ContactMethod = styled.a`
   text-decoration: none;
   display: inline-block;
-  width: 100%;
+  width: 90%;
   height: 38px;
   border: solid 1px black;
   border-radius: 10px;

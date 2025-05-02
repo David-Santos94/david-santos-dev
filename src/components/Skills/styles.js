@@ -7,6 +7,10 @@ export const Content = styled.div`
   align-items: center;
   height: 100vh;
   background-color: ${Colors.bgcolor2};
+
+  @media screen and (max-width: 1023px) {
+    height: 100svh;
+  }
 `;
 
 export const Titles = styled.h1`
@@ -24,6 +28,16 @@ export const SkillList = styled.div`
   height: 400px;
   margin: 0 auto;
   overflow: hidden;
+
+  @media screen and (max-width: 1023px) {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    flex-direction: row;
+    align-content: center;
+    justify-content: center;
+    align-items: flex-end;
+  }
 `;
 
 export const SkillName = styled.div`
@@ -32,6 +46,10 @@ export const SkillName = styled.div`
   height: 64px;
   justify-content: center;
   align-items: center;
+
+  @media screen and (max-width: 1023px) {
+    flex-wrap: wrap;
+  }
 `;
 
 export const Name = styled.span`
@@ -68,5 +86,9 @@ export const SkillIcon = styled.img`
     transform: scale(1.1);
     z-index: 2;
     box-shadow: 0px 0px 15px #ffffff;
+  }
+
+  @media screen and (max-width: 1023px) {
+    position: static;
   }
 `;

@@ -8,6 +8,11 @@ export const NavContainer = styled.div`
   height: 48px;
   z-index: 2;
   background-color: ${({ solidNav }) => (solidNav ? Colors.bgcolor2 : null)};
+
+  @media screen and (max-width: 1023px) {
+    width: 20%;
+    background-color: transparent;
+  }
 `;
 
 export const Nav = styled.ul`
@@ -19,6 +24,29 @@ export const Nav = styled.ul`
   height: 100%;
   margin: 0 auto;
   list-style: none;
+
+  @media screen and (max-width: 1023px) {
+    display: ${({ display }) => (display ? "flex" : "none")};
+    width: fit-content;
+    height: auto;
+    padding: 5px;
+    margin-left: 12px;
+    flex-direction: column;
+    background-color: ${Colors.bgcolor2};
+    border-radius: 5px;
+  }
+`;
+
+export const Menu = styled.img`
+  display: none;
+  width: 48px;
+  margin: 12px;
+  background-color: ${Colors.bgcolor1};
+  border-radius: 5px;
+
+  @media screen and (max-width: 1023px) {
+    display: block;
+  }
 `;
 
 export const Item = styled.li`
@@ -49,5 +77,9 @@ export const Item = styled.li`
 
   &:hover::after {
     width: 100%;
+  }
+
+  @media screen and (max-width: 1023px) {
+    font-size: 18px;
   }
 `;

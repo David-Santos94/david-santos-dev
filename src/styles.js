@@ -47,6 +47,14 @@ export const Container = styled.div`
   max-width: 1080px;
   margin: 0 auto;
   z-index: 1;
+
+  @media screen and (max-width: 1023px) {
+    max-width: 80%;
+  }
+
+  @media screen and (max-width: 767px) {
+    max-width: 90%;
+  }
 `;
 
 export const SectionContainer = styled.section`
