@@ -22,10 +22,10 @@ Bem-vindo ao meu portfólio pessoal, desenvolvido com foco em performance, desig
 
 ```bash
 # Clone o repositório
-git clone https://github.com/SEU_USUARIO/SEU_REPOSITORIO.git
+git clone https://github.com/David-Santos94/david-santos-dev.git
 
 # Acesse o diretório do projeto
-cd SEU_REPOSITORIO
+cd david-santos-dev
 
 # Instale as dependências
 npm install
@@ -34,13 +34,12 @@ npm install
 npm run dev
 ```
 
-##🌐 Deploy
+## 🌐 Deploy
 
 Este projeto está disponível em produção em:
 
 🔗 https://david-santos-dev.vercel.app/
-(Atualize com seu link no Vercel, Netlify ou outro serviço)
 
-##👤 Autor
+## 👤 Autor
 
 David Santos
